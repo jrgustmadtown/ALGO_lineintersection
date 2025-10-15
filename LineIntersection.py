@@ -8,7 +8,7 @@ outputy = []
 
 
 def intersects(P, Q):
-    xpairs = [(Q[i], P[i]) for i in range(n)]
+    xpairs = [(P[i], Q[i]) for i in range(len(P))]
     xpairs.sort()
     xQ = [q for (_,q) in xpairs]
 
@@ -48,10 +48,10 @@ for _ in range(k):
     index+=1
 
     for __ in range(n):
-        line1.append(inputy[index])
+        line1.append(int(inputy[index]))
         index+=1
     for __ in range(n):
-        line2.append(inputy[index])
+        line2.append(int(inputy[index]))
         index+=1
 
     _, count = intersects(line1, line2)
