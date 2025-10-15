@@ -54,7 +54,8 @@ for _ in range(k):
         line2.append(inputy[index])
         index+=1
 
-    outputy.append(intersects(line1, line2))
+    _, count = intersects(line1, line2)
+    outputy.append(count)
 
 for _ in outputy:
     print(_)
