@@ -39,7 +39,7 @@ def intersects(P, Q):
         merged, c = MergeCount(front, back)
         return merged, c+fc+bc
 
-    return MergeCount(xQ)
+    return CountSort(len(xQ), xQ)
 
 for _ in range(k):
     line1 = []
